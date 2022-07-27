@@ -67,7 +67,9 @@ img{
 .menu-bar{
     display: none;
 }
-
+@media screen and (max-width: ${size.laptop}){
+    margin: 1rem;
+}
 @media screen and (max-width: ${size.tablet}){
     margin: 0rem 1rem;
     .nav-links,
@@ -83,4 +85,28 @@ img{
         }
     }
 }
+`
+export const StyledBottomNav = styled.nav`
+    padding: 1.5rem 2.5rem;
+    border-top: 2px solid #eee;
+    a{
+        color: var(--black);
+        text-decoration: none;
+        margin-right: 2rem;
+        font-weight: 500;
+        font-size: 1em;
+        &:first-child{
+            color: var(--orange)
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: .8rem;
+            /* padding: 1.3rem 2.5rem; */
+        }
+        @media screen and (max-width: ${size.tablet}){
+            margin-right: 1rem;
+        }
+    }
+    @media screen and (max-width: ${size.laptop}){
+        padding: 1rem;
+    }
 `
