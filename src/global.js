@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .App{
         @media screen and (${device.desktop}) {
-            width: 50%;
+            width: 63%;
             margin: auto;
             background-color: var(--white);
         }
