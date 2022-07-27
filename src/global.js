@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --black: #000;
         --white: #fff;
         --background: #F3F3F3;
-        --font-family: 'Ubuntu', sans-serif;
+        --font-family: 'Futura PT', sans-serif;
     }
     body{
         position: relative;
