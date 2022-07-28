@@ -29,6 +29,9 @@ export const StyledSection = styled.section`
             z-index: 1000;
         }
     }
+    @media screen and (max-width:${size.tablet}) {
+        margin: 8rem auto;
+    }
     @media screen and (max-width:${size.mobileL}) {
         margin: 3rem auto;
     }
