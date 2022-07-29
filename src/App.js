@@ -1,3 +1,4 @@
+import { Collage2 } from "./Components/Collage2/Collage2";
 import { Header } from "./Components/Header/Header";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Section1 } from "./Components/Section1/Section1";
@@ -12,6 +13,7 @@ function App() {
       <Section1 />
       <Section2 />
       <VideoSection />
+      <Collage2 />
     </div>
   );
 }
