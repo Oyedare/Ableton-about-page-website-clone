@@ -7,6 +7,7 @@ import { Section2 } from "./Components/Section2/Section2";
 import { Section5 } from "./Components/Section5/Section5";
 import { Section6 } from "./Components/Section6/Section6";
 import { Section7 } from "./Components/Section7/Section7";
+import { Section9 } from "./Components/Section9/Section9";
 import { VideoSection } from "./Components/VideoSection/VideoSection";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Section6 />
       <Section7 />
       <Collage3 />
+      <Section9 />
     </div>
   );
 }

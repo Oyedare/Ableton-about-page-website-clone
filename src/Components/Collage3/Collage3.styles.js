@@ -3,6 +3,7 @@ import { size } from '../../breakpoints';
 export const StyledCollage = styled.div`
     width: 100%;
     position: relative;
+    margin-bottom: 15rem;
     img{
         width: 85%
     }
