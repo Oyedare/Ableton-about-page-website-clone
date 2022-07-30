@@ -14,6 +14,7 @@ export const StyledSection = styled.section`
         }
         @media screen and (max-width:${size.laptop}) {
         width: 65%;
+        margin-top:6rem;
             .bold{
                 font-size: 1.25rem;
                 line-height: 1.5;

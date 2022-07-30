@@ -1,4 +1,5 @@
 import { Collage2 } from "./Components/Collage2/Collage2";
+import { Collage3 } from "./Components/Collage3/Collage3";
 import { Header } from "./Components/Header/Header";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Section1 } from "./Components/Section1/Section1";
@@ -20,6 +21,7 @@ function App() {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Collage3 />
     </div>
   );
 }
