@@ -72,6 +72,11 @@ img{
 }
 @media screen and (max-width: ${size.tablet}){
     margin: 0rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    /* .left-nav{
+        flex-direction: column;
+    } */
     .nav-links,
     .right-nav{
         display: none;
@@ -108,5 +113,13 @@ export const StyledBottomNav = styled.nav`
     }
     @media screen and (max-width: ${size.laptop}){
         padding: 1rem;
+    }
+`
+
+export const StyledMenuLinks = styled.div`
+    .div-4{
+       .colored{
+        color: var(--orange)
+       }
     }
 `
