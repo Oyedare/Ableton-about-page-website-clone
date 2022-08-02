@@ -67,6 +67,9 @@ img{
 .menu-bar{
     display: none;
 }
+.menu-links{
+    display: none;
+}
 @media screen and (max-width: ${size.laptop}){
     margin: 1rem;
 }
@@ -74,9 +77,6 @@ img{
     margin: 0rem 1rem;
     flex-direction: column;
     align-items: flex-start;
-    /* .left-nav{
-        flex-direction: column;
-    } */
     .nav-links,
     .right-nav{
         display: none;
@@ -89,11 +89,15 @@ img{
             font-size: 1.3rem;
         }
     }
+    .menu-links{
+        display: block;
+    }
 }
 `
 export const StyledBottomNav = styled.nav`
     padding: 1.5rem 2.5rem;
     border-top: 2px solid #eee;
+    /* position: sticky; */
     a{
         color: var(--black);
         text-decoration: none;
@@ -114,6 +118,9 @@ export const StyledBottomNav = styled.nav`
     @media screen and (max-width: ${size.laptop}){
         padding: 1rem;
     }
+    @media screen and (max-width: ${size.tablet}){
+        display: none;
+    }
 `
 
 export const StyledMenuLinks = styled.div`
@@ -121,5 +128,34 @@ export const StyledMenuLinks = styled.div`
        .colored{
         color: var(--orange)
        }
+    }
+`
+export const StyledTabletBottomNav = styled.nav`
+    padding: 1.5rem 2.5rem;
+    border-top: 2px solid #eee;
+    display: none;
+    /* position: sticky; */
+    a{
+        color: var(--black);
+        text-decoration: none;
+        margin-right: 2rem;
+        font-weight: 500;
+        font-size: 1em;
+        &:first-child{
+            color: var(--orange)
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: .8rem;
+            /* padding: 1.3rem 2.5rem; */
+        }
+        @media screen and (max-width: ${size.tablet}){
+            margin-right: 1rem;
+        }
+    }
+    @media screen and (max-width: ${size.laptop}){
+        padding: 1rem;
+    }
+    @media screen and (max-width: ${size.tablet}){
+        display: block;
     }
 `

@@ -6,6 +6,7 @@ import { HiPlus} from "react-icons/hi";
 import { AiOutlineCaretDown} from "react-icons/ai";
 import { BottomNav } from './BottomNav';
 import { MenuLinks } from '../MenuLinks/MenuLinks';
+import { TabletBottomNav } from './TabletBottomNav';
 
 export const Navbar = () => {
     const Links = [
@@ -46,9 +47,10 @@ export const Navbar = () => {
                 <Link to="/" className='last-child'>Log in or register</Link>
             </div>
         </Nav>
-        {!toggle&&(
             <BottomNav />
-        )}
+            {!toggle&&(
+                <TabletBottomNav />
+            )}
     </>
   )
 }
