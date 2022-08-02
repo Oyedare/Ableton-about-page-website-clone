@@ -64,20 +64,20 @@ export const StyledSection = styled.section`
     @media screen and (max-width:${size.mobileL}) {
         width: 90%;
         .text-section{
-            padding: 1rem 1.7rem;
-            /* width: 74%; */
+            padding: 1rem 3rem;
+            width: 89%;
         }
     }
     @media screen and (max-width:${size.mobileM}) {
         .text-section{
-            /* padding: 1rem 1.7rem; */
-            width: 84%;
+            padding: 1rem 1.9rem;
+            /* width: 90%; */
         }   
     }
     @media screen and (max-width:${size.mobileL}) {
         .text-section{
-            /* padding: 1rem 1.7rem; */
-            width: 82%;
+            padding: 1rem 1.3rem;
+            /* width: 82%; */
         }   
     }   
 `
